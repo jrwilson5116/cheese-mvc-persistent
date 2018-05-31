@@ -5,8 +5,9 @@
     <title>Title</title>
 </head>
 <body>
-    <ul th: each ="element: ${categories}">
+    <ul th:each ="element: ${categories}">
         <span th:text="${element.name}">category</span>
     </ul>
+    <a href = "/category/add">Add Category</a>
 </body>
 </html>
