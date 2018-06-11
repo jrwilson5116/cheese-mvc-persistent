@@ -6,8 +6,16 @@
 
 <h1 th:text="${title}">Default Title</h1>
 
-<nav th:replace="fragments :: navigation"></nav>
+<nav th:replace="fragments :: categoryNav"></nav>
 
+<p th:unless="${categories} and ${categories.size()}">no categories :(</p>
+
+<table>
+    <tr th:each="category : ${categories}">
+        <td th:text="${category.name}"></td>
+    </tr>
+
+</table>
 
 </body>
 </html>
