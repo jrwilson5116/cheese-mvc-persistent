@@ -23,8 +23,8 @@ public class Category {
     private List<Cheese> cheeses = new ArrayList<>();
 
 
-    public Category(){ }
-
+    public Category(){
+    }
 
     public Category(String name){
         this.name = name;
