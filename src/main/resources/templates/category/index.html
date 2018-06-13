@@ -6,7 +6,7 @@
 
 <h1 th:text="${title}">Default Title</h1>
 
-<nav th:replace="fragments :: categoryNav"></nav>
+<nav th:replace="fragments :: navigation"></nav>
 
 <p th:unless="${categories} and ${categories.size()}">no categories :(</p>
 
