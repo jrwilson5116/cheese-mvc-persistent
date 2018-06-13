@@ -15,8 +15,7 @@
         <th>Menus</th>
     </tr>
 
-    <tr th:each menu : ${menus}>
-        <!--not sure if this will work...leaving it as placeholder-->
+    <tr th:each="menu : ${menus}">
         <td><a th:href="'menu/view'+${menu.id}" th:text="${menu.name}"></a></td>
     </tr>
     <tr>
