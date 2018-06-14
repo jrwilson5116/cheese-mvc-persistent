@@ -18,16 +18,32 @@ public class AddMenuItemForm {
         return menu;
     }
 
+    public void setMenu(){
+        this.menu=menu;
+    }
+
     public Iterable getCheeses(){
         return cheeses;
+    }
+
+    public void setCheeses(){
+        this.cheeses=cheeses;
     }
 
     public int getMenuId(){
         return menuId;
     }
 
+    public void setMenuId(){
+        this.menuId=menuId;
+    }
+
     public int getCheeseId(){
         return cheeseId;
+    }
+
+    public void setCheeseId(){
+        this.cheeseId=cheeseId;
     }
 
     public AddMenuItemForm(){
